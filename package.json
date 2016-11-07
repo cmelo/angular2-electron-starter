@@ -36,6 +36,7 @@
     "codelyzer": "1.0.0-beta.1",
     "electron": "^1.4.4",
     "electron-packager": "^8.1.0",
+    "electron-prebuilt": "^1.4.5",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
