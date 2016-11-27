@@ -1,11 +1,20 @@
+import { provideRoutes } from '@angular/router';
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { RouterTestingModule } from '@angular/router/testing';
+
+import { Page2Component } from './page2.component';
+
 describe('App', () => {
   beforeEach(() => {
-    TestBed.configureTestingModule({ declarations: [AppComponent]});
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
+      providers: [provideRoutes([])],
+      declarations: [Page2Component]
+    });
   });
+
   it ('should work', () => {
-    let fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance instanceof AppComponent).toBe(true, 'should create AppComponent');
+    let fixture = TestBed.createComponent(Page2Component);
+    expect(fixture.componentInstance instanceof Page2Component).toBe(true, 'should create Page2Component');
   });
 });
